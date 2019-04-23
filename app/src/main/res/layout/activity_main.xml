@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bttnReadySlv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="SolveRubik" />
+
+    <Button
+        android:id="@+id/bttnPreSolve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="OperationsList" />
+
+    <TextView
+        android:id="@+id/textViewOperationResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bttnPreSolve"
+        android:layout_alignParentLeft="true"
+        android:text="Operations" />
+
+    <ImageView
+        android:id="@+id/imgReturn"
+        android:layout_width="550dp"
+        android:layout_height="550dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/buttonBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonFront"
+        android:text="3:bottom" />
+
+    <Button
+        android:id="@+id/buttonRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonBottom"
+        android:text="4: right" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonRight"
+        android:text="5:back" />
+
+    <Button
+        android:id="@+id/buttonLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonBack"
+        android:text="6:left" />
+
+    <Button
+        android:id="@+id/bttnCheckRubikcube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewOperationResult"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:text="CheckCube" />
+
+    <Button
+        android:id="@+id/bttnCorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bttnCheckRubikcube"
+        android:layout_alignBottom="@+id/bttnCheckRubikcube"
+        android:layout_toLeftOf="@+id/editTextLeft"
+        android:text="ToCorrect" />
+
+    <EditText
+        android:id="@+id/editTextLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonLeft"
+        android:layout_alignParentRight="true"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editTextFront"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonFront"
+        android:layout_alignBottom="@+id/buttonFront"
+        android:layout_alignParentRight="true"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editTextBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonBottom"
+        android:layout_alignBottom="@+id/buttonBottom"
+        android:layout_alignParentRight="true"
+        android:ems="10">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonRight"
+        android:layout_alignBottom="@+id/buttonRight"
+        android:layout_alignParentRight="true"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editTextBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonBack"
+        android:layout_alignBottom="@+id/buttonBack"
+        android:layout_alignParentRight="true"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/buttonTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:text="1: top" />
+
+    <EditText
+        android:id="@+id/editTextTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonTop"
+        android:layout_alignBottom="@+id/buttonTop"
+        android:layout_toRightOf="@+id/bttnCorrect"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/buttonFront"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonTop"
+        android:text="2: front" />
+
+</RelativeLayout>
