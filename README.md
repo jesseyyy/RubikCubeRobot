@@ -1,4 +1,4 @@
-# RubikRobot
+# RubikCubeRobot
 
 
 This project need a LEGO NXT to receive messages via Bluetooth. The NXT is able to solve a Rubik's cube after it carrys out all commands. These source codes in JAVA should be run in an Android phone.
